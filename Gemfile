@@ -13,6 +13,15 @@ gem 'bootstrap-sass'
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
+group :development, :test do
+	gem 'sqlite3'
+end
+
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
+
 #group :doc do
 	# bundle exec rake doc:rails generates the API under doc/api.
 #	gem 'sdoc', '~> 0.4.0', require: false
