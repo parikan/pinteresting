@@ -11,7 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 gem 'devise', '3.5.2'
 gem 'paperclip', '3.5.1'
-gem 'aws-sdk', '~> 1.20.0'
+gem 'aws-sdk', '<2.0'
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
