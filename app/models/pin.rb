@@ -5,4 +5,7 @@ class Pin < ActiveRecord::Base
      #do_not_validate_attachment_file_type :image
      # validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/ #added as recommended in forum
 
+     validates :image, presence: true
+     validates :description, presence: true
+
 end
